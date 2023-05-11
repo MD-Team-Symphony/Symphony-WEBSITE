@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Symphony公式サイト">
+    <meta name="description" content="Symphonyのチーム内メンバー紹介サイト">
+    <title>MD Team Symphony</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="images/logo.png" type="image/svg+xml">
+</head>
+<body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <p>Loading...</p>
+        <div id="loading-screen"></div>
+    </div>
+
+    <div class="title">
+        <img src="images/symphonyタイトル.PNG" id="top" alt="">
+    </div>
+
+    <!-- ナビゲーションメニュー -->
+    <nav>
+        <button id="menu-open" class="btn-menu">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="ヴァレルエンド.png">
+                <title>メニューを開く</title>
+                <path clip-rule="evenodd" d="m4.25 8c0-.41421.33579-.75.75-.75h14c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.33579-.75-.75zm0 4c0-.4142.33579-.75.75-.75h14c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.3358-.75-.75zm.75 3.25c-.41421 0-.75.3358-.75.75s.33579.75.75.75h14c.4142 0 .75-.3358.75-.75s-.3358-.75-.75-.75z" fill-rule="evenodd"/>
+            </svg>
+        </button>
+        <div id="menu-panel">
+            <button id="menu-close" class="btn-menu">
+                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <title>メニューを閉じる</title>
+                    <path clip-rule="evenodd" d="m7.53033 6.46967c-.29289-.29289-.76777-.29289-1.06066 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76777.2929 1.06066 0l4.46967-4.4696 4.4697 4.4696c.2929.2929.7677.2929 1.0606 0s.2929-.7677 0-1.0606l-4.4696-4.4697 4.4696-4.46967c.2929-.29289.2929-.76777 0-1.06066s-.7677-.29289-1.0606 0l-4.4697 4.46963z" fill-rule="evenodd"/>
+                </svg>
+            </button>
+            <ul class="menu-list">
+                <li><a href="#">Top</a></li>
+                <li><a href="#member">Member</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+            </ul>
+        </div>
+    </nav>
+      
+    <!-- <section class="hero">
+        <h1 class="title">MD Team<br>Symphony</h1>
+    </section> -->
+      
+    <section class="concept">
+        <div class="wrapper">
+            <h2 class="title fadein">チームの運営方針</h2>
+            <p class="fadein">
+                発足したての頃はOCG経験のあるリーダーみりおんを中心として、MD勢をゆくゆくはWMGPなどの大会で活躍出来るレベルに押し上げたいと思って
+                活動してました。現在ではメンバーも成長して入賞も増えてきたのでその野望も叶いつつあります。
+                個人戦、リーグ戦共に上位を目指し、切磋琢磨し合えるチーム作りをしたいと考えています。
+                チームが特に重要視しているのはコミュニケーション能力がある人とモチベーションの継続が可能な人材です。
+                コミュニケーションが上手く取れる人程、チーム内の連携も上手く行くと考え、モチベーションが継続出来る人は能動的に行動出来ると考えていますので
+                そのような人達を積極的にチームに入れ、チームの勢力拡大やMDを盛り上げて行きたいと考えております。
+            </p>
+        </div>
+        <img src="images/右側画像.png.png" alt="">
+    </section>
+    
+    <section class="gallery">
+        <div class="gallery-content wrapper">
+          <h2 class="title fadein" id="member">Member</h2>
+          <ul class="gallery-thumbnails">
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-mirion">
+                <img src="images/みりおんさん.png" alt="" >
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-oz">
+                <img src="images/オズさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-shinl">
+                <img src="images/震Lさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-ma">
+                <img src="images/maさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-teras">
+                <img src="images/terasさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-kuji">
+                <img src="images/くじらさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-ribo">
+                <img src="images/リボ山.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-magu">
+                <img src="images/マグノリアさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-miya">
+                <img src="images/みやうちさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-watti">
+                <img src="images/わっち.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-yu">
+                <img src="images/ユーさん.png" alt="">
+              </button>
+            </li>
+            <li class="fadein">
+              <button class="modal-open" data-target="#modal-yama">
+                <img src="images/山野仁成さん.png" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="overlay" id="js-overlay"></div>
+    
+        <div class="modal" id="modal-mirion">
+          <div class="modal-close__wrap">
+            <button class="modal-close">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <h1>みりおん</h1>
+          <img class="modalimg" src="images/みりおんさん.png" alt="" width="100" height="100">
+          <p>WCS2009日本代表など輝かしい実績を持つ、Symphonyの発起人です。現役でOCGをプレイしてきたことで培われたプレイ、構築論を軸に堅実に結果を積み上げています。対海外MDチーム「ルートA」にも所属したりと精力的に活動を続け、チームを引っ張っています。</p>
+          <a href="https://twitter.com/Reb_Million"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+        </div>
+    ^
+        <div class="modal" id="modal-oz">
+          <div class="modal-close__wrap">
+            <button class="modal-close">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <h1>オズ</h1>
+          <img class="modalimg" src="images/オズさん.png" alt="" width="100" height="100">
+          <p>チームの副代表、OCGではふわんだいりぃずやシャドールなどのミッドレンジデッキを駆使して戦うプレイヤー。</p>
+          <a href="https://twitter.com/YPozDRS"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+        </div>
+    
+        <div class="modal" id="modal-shinl">
+          <div class="modal-close__wrap">
+            <button class="modal-close">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <h1>震L</h1>
+          <img class="modalimg" src="images/震Lさん.png" alt="" width="100" height="100">
+          <p>MDから始めたにも関わらず、丁寧にゲームを進め数多くの入賞を果たし続ける頭脳派プレーヤー。なかでも毎日CS優勝者限定大会連覇はいまだに彼しか達成していません。しかしその裏でユーモアに溢れる一面も多く、今日もメリハリをつけMDに向き合っています。</p>
+          <a href="https://twitter.com/furueru_mh4"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    <div class="modal" id="modal-ma">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>ma</h1>
+      <img class="modalimg" src="images/maさん.png" alt="" width="100" height="100">
+      <p>ポケモンが好きでチーム内大会でも優勝してる実力者。逆張りデッキを好む。Symphonyポケカ部門部長。</p>
+      <a href="https://twitter.com/ma68234025"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    
+    <div class="modal" id="modal-teras">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>teras</h1>
+      <img class="modalimg" src="images/terasさん.png" alt="" width="100" height="100">
+      <p>代表との付き合いは最も長い。周りが気付けないようなプレイングにも気付きチームを勝利に導くプレイヤー</p>
+      <a href="https://twitter.com/teras373"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    
+    <div class="modal" id="modal-kuji">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>くじら</h1>
+      <img class="modalimg" src="images/くじらさん.png" alt="" width="100" height="100">
+      <p>王道デッキを使いこなし様々なケア展開や構築段階から深く考えこめるプレイヤー。酒豪で留年。</p>
+      <a href="https://twitter.com/KuziraMDYP"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    
+    <div class="modal" id="modal-ribo">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>リボ山</h1>
+      <img class="modalimg" src="images/リボ山.png" alt="" width="100" height="100">
+      <p>様々なデッキを扱い、自らルームマッチを開き人を集めMD界隈を盛り上げるプレイヤー。中国プレイヤーとの交流もあり、MD界の遣唐使。</p>
+      <a href="https://twitter.com/masterdueldata"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    <div class="modal" id="modal-magu">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>マグノリア</h1>
+      <img class="modalimg" src="images/マグノリアさん.png" alt="" width="100" height="100">
+      <p>謎に包まれている。</p>
+      <a href="https://twitter.com/Magnolia_liliy"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    <div class="modal" id="modal-miya">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>みやうち</h1>
+      <img class="modalimg" src="images/みやうちさん.png" alt="" width="100" height="100">
+      <p>強いデッキを好み、様々な配信で勉強してデッキを駆使するプレイヤー、資産にも余裕がありURポイント1000を超えたりする。</p>
+      <a href="https://twitter.com/miyauchidp"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    <div class="modal" id="modal-watti">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>わっち</h1>
+      <img class="modalimg" src="images/わっち.png" alt="" width="100" height="100">
+      <p>その時勝てるデッキを使い倒すプレイヤー。</p>
+      <a href="https://twitter.com/toyamakasumi_g"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    <div class="modal" id="modal-yu">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>ユー</h1>
+      <img class="modalimg" src="images/ユーさん.png" alt="" width="100" height="100">
+      <p>毎日CS優勝2回、海外を飛び回っていて、SPYRALが好きな古の遊戯王プレイヤー。</p>
+      <a href="https://twitter.com/Mcgazk3YV1gUqfX"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+    <div class="modal" id="modal-yama">
+      <div class="modal-close__wrap">
+        <button class="modal-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <h1>山野仁成</h1>
+      <img class="modalimg" src="images/山野仁成さん.png" alt="" width="100" height="100">
+      <p>毎日CS優勝6回、強いデッキを上手く使いこなしCSで結果を残している。</p>
+      <a href="https://twitter.com/CEIQpKDBCUGiiiN"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a>
+    </div>
+      </section>
+      
+       
+              
+      
+    
+    <section class="shop">
+        <div class="shop-content wrapper">
+            <h2 class="title fadein">主な過去の参加リーグ</h2>
+            <p class="fadein">第1回WMGP、第2回WMGP、第回のんびリーグ</p>
+            
+            <h3 class="fadein" id="twitter">チーム代表：みりおん</h3>
+            <p class="fadein">
+                ↓チームのツイッターはこちら↓<br>
+                <a href="https://twitter.com/MDteam_Symphony"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.png" class="icon"></a><br>
+            </p>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
