@@ -191,14 +191,13 @@ HERO
 /*
 SHOP INFO
 ================================================ */
-.shop {
-    background: url('../images/ヴァレルエンド.png') no-repeat center top / cover;
+.achievement {
     margin-top: 16rem;
     position: relative;
     height: 40rem;
 }
 
-.shop-content {
+.achievement-content {
     background: var(--white);
     padding: 3rem;
     position: absolute;
@@ -208,7 +207,7 @@ SHOP INFO
     right: 0;
 }
 
-.shop h3 {
+.achievement h3 {
     margin: 1rem 0;
     padding-top: 2rem;
     font-weight: normal;
@@ -452,12 +451,8 @@ DESKTOP SIZE
     }
 
     /* SHOP */
-    .shop {
+    .achievement {
         margin-top: 20rem;
         height: 50rem;
     }
 }
-
-/*
-SMARTPHONE　SIZE
-================================================ */
