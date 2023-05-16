@@ -189,7 +189,7 @@ HERO
 }
 
 /*
-SHOP INFO
+ACHEVEMENT INFO
 ================================================ */
 .achievement {
     margin-top: 16rem;
@@ -251,6 +251,7 @@ GALLERY
     margin: 0 auto;
 }
 
+
 .modal p {
     position: absolute;
     top: calc(50% + 15px);
@@ -262,7 +263,8 @@ GALLERY
     z-index: 10;
     font-size: 14px;
     z-index: 1;
-    width: 90%; /* テキストの幅を調整 */
+    width: 90%;
+    /* テキストの幅を調整 */
 }
 
 .modal-close__wrap {
@@ -407,20 +409,31 @@ DESKTOP SIZE
         color: var(--green);
     }
 
-    /* CONCEPT*/
-    .concept {
+    /* CONCEPT */
+    .concept { 
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 16rem 0;
-    }
-
-    .concept p {
-        text-align-last: left;
-    }
-
-    .concept img {
-        margin: -6rem 0;
-        max-width: 38rem;
-    }
+        height: 100vh;
+      }
+      
+      .concept .wrapper {
+        display: flex;
+        align-items: flex-start;
+      }
+      
+      .concept .content {
+        text-align: center;
+        background: var(--white);
+        padding: 2rem;
+        max-width: 90vw;
+      }
+      
+      .concept h2 {
+        display: inline-block;
+        margin-right: 1rem;
+      }
 
     /* GALLERY */
     .gallery {
@@ -456,3 +469,18 @@ DESKTOP SIZE
         height: 50rem;
     }
 }
+
+/*
+SMARTPHONE　SIZE
+================================================ */
+@media (max-width: 767px) {
+    .concept {
+      flex-direction: column;
+    }
+  
+    .concept .content {
+      margin-top: 2rem; /* 追加 */
+      border-radius: 5px; /* 追加 */
+      background: var(--white);
+    }
+  }
