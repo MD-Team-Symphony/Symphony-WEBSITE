@@ -46,6 +46,7 @@ img {
 .title {
     background-size: cover;
     background-position: center;
+    margin-left: 1.5rem;
 }
 
 .btn {
@@ -203,8 +204,9 @@ ACHEVEMENT INFO
     position: absolute;
     top: -8rem;
     width: 90vw;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
 }
 
 .achievement h3 {
@@ -213,6 +215,7 @@ ACHEVEMENT INFO
     font-weight: normal;
     border-top: 1px solid var(--light-grey);
 }
+
 
 /*
 GALLERY
@@ -319,9 +322,15 @@ GALLERY
     flex-direction: column-reverse;
 }
 
+.gallery-content {
+    justify-content: center;
+  }
+  
+
 .gallery-image {
     width: min(100%, calc(38rem - 2rem));
     margin: auto;
+    justify-content: center;
     position: relative;
 }
 
@@ -351,6 +360,7 @@ GALLERY
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     margin: 1rem 0;
+    justify-items: center;
 }
 
 .gallery-thumbnails img {
@@ -473,14 +483,15 @@ DESKTOP SIZE
 /*
 SMARTPHONE　SIZE
 ================================================ */
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .concept {
       flex-direction: column;
     }
   
     .concept .content {
-      margin-top: 2rem; /* 追加 */
-      border-radius: 5px; /* 追加 */
+      margin-top: 2rem; 
+      border-radius: 5px; 
       background: var(--white);
     }
   }
+
