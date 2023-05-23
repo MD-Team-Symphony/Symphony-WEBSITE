@@ -393,7 +393,7 @@ GALLERY
 /*
 DESKTOP SIZE
 ================================================ */
-@media(min-width: 800px) {
+@media(min-width: 960px) {
 
     /* COMMON */
     .title {
@@ -445,53 +445,64 @@ DESKTOP SIZE
         margin-right: 1rem;
       }
 
-    /* GALLERY */
-    .gallery {
+      .gallery {
         flex-direction: row;
-    }
-
-    .gallery-image {
+      }
+    
+      .gallery-image {
         width: 50vw;
         margin: 0;
-    }
-
-    .gallery-image img {
+      }
+    
+      .gallery-image img {
         height: 100vh;
-    }
-
-    .gallery-content {
+      }
+    
+      .gallery-content {
         width: 30vw;
-    }
-
-    .gallery-thumbnails {
+      }
+    
+      .gallery-thumbnails {
         gap: 2vw;
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .gallery-thumbnails img:hover {
+      }
+    
+      .gallery-thumbnails img:hover {
         box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
         transition: .4s;
-    }
-
-    /* SHOP */
-    .achievement {
+      }
+    
+      /* SHOP */
+      .achievement {
         margin-top: 20rem;
         height: 50rem;
+      }
     }
-}
-
-/*
-SMARTPHONE　SIZE
-================================================ */
-@media (max-width: 800px) {
+    
+/* スマートフォンサイズ */
+@media (max-width: 959px) {
     .concept {
       flex-direction: column;
     }
   
     .concept .content {
-      margin-top: 2rem; 
-      border-radius: 5px; 
+      margin-top: 2rem;
+      border-radius: 5px;
       background: var(--white);
     }
+  
+    /* 画像の中央寄せ修正 */
+    .gallery-thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2vw;
+    }
+  
+    .gallery-thumbnails li {
+      width: calc(33.33% - 2vw);
+      display: flex;
+      justify-content: center;
+    }
   }
-
